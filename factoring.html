@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factoring Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Factoring Calculator</h2>
+
+    <label for="invoiceValue">Invoice Value (€):</label>
+    <input type="number" id="invoiceValue" value="10000">
+
+    <label for="advanceRate">Advance Rate (%):</label>
+    <input type="number" id="advanceRate" value="80">
+
+    <label for="factoringFee">Factoring Fee (%):</label>
+    <input type="number" id="factoringFee" value="2">
+
+    <label for="interestRate">Interest Rate (Annual %):</label>
+    <input type="number" id="interestRate" value="5">
+
+    <label for="paymentPeriod">Payment Period (Days):</label>
+    <input type="number" id="paymentPeriod" value="60">
+
+    <button id="calculate">Calculate</button>
+
+    <div class="result">Advance Amount: <span id="advanceAmount">€0.00</span></div>
+    <div class="result">Factoring Fee: <span id="factoringFeeAmount">€0.00</span></div>
+    <div class="result">Interest: <span id="interestAmount">€0.00</span></div>
+    <div class="result">Final Settlement: <span id="finalSettlement">€0.00</span></div>
+
+    <script src="factoring_calculator.js"></script>
+
+</body>
+</html>
