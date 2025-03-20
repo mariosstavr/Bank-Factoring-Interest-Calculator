@@ -21,3 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("finalSettlement").textContent = `€${finalSettlement.toFixed(2)}`;
     });
 });
+
+console.log("JavaScript is running!");
